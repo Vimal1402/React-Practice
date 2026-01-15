@@ -1,0 +1,364 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Navbar */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 4rem;
+}
+
+.navbar .logo {
+  padding-right: 2rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.navbar img {
+  width: 2.5rem;
+  border-radius: 50%;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .left a {
+  padding: 0.5rem 2.8rem;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  text-align: center;
+}
+
+.navbar .left .links {
+  padding-left: 7.3rem;
+}
+
+a:hover {
+  padding-left: 7.3rem;
+  border: 1px solid black;
+  border-radius: 2rem;
+}
+
+.navbar .right button {
+  color: white;
+  padding: 0.5rem 1.5rem;
+  background-color: black;
+  font-size: 1rem;
+  font-weight: 200;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+/* Main Section 1 */
+
+.main {
+  background: url(./assets/background.jpg);
+  margin: 0 auto;
+  width: 90%;
+  background-size: cover;
+  display: flex;
+
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 1.5rem;
+  object-fit: cover;
+}
+
+.main .upper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.upper h1 {
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: 400;
+  color: rgb(246, 241, 241);
+  padding: 2rem 15rem;
+}
+
+.upper p {
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 200;
+  color: rgb(246, 241, 241);
+  padding: 1rem 20rem;
+}
+
+.upper button {
+  color: white;
+  padding: 1rem 1.5rem;
+  background-color: black;
+  font-size: 1rem;
+  font-weight: 200;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 2rem;
+  padding-top: 8rem;
+  color: white;
+}
+
+.bottom .left {
+  width: 13rem;
+}
+
+.bottom .right a {
+  color: white;
+  font-size: 1rem;
+  padding: 0 1rem;
+  text-decoration: none;
+}
+
+/* Section 2 */
+
+.section2 {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 4.3rem;
+  align-items: center;
+}
+
+.section2 .button button {
+  padding: 0.4rem;
+  font-size: 1.15rem;
+  font-weight: 500;
+  background-color: transparent;
+  border-radius: 1rem;
+  border: 1px solid rgb(203, 173, 173);
+}
+
+.section2 .content {
+  width: 57%;
+  font-size: 1.5rem;
+}
+
+.section2 .content h3 {
+  font-weight: 400;
+  text-align: start;
+}
+
+/* Section 3 */
+
+
+.section3 {
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem auto;
+}
+
+.section3 .cards {
+  background-size: cover;
+  width: 26rem;
+  height: 25rem;
+  border-radius: 3rem;
+}
+
+.section3 .card1 {
+  background: rgb(4, 4, 69);
+}
+
+.section3 .card1 p {
+  font-size: 2.1rem;
+  color: white;
+  padding: 2rem 2rem;
+  font-weight: 400;
+}
+
+.section3 p span {
+  color: rgb(112, 112, 115);
+}
+
+
+
+/* CSS */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  padding: 0 2.2rem;
+  margin: 2rem 2rem;
+
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider::before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+/* Toggle ON */
+input:checked+.slider {
+  background-color: #2196F3;
+}
+
+input:checked+.slider::before {
+  transform: translateX(34px);
+}
+
+.game {
+  color: rgb(112, 112, 115);
+  margin: 2rem;
+  font-size: 1.5rem;
+}
+
+.card2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(./assets/background.jpg);
+}
+
+.card2 button {
+  padding: 1.2rem 2rem;
+  background-color: #aab6c085;
+  font-size: 1.2rem;
+  color: white;
+  border-radius: 2rem;
+  border: none;
+}
+
+.card3 {
+  background-color: whitesmoke;
+}
+
+.card3 .top{
+  padding: 2rem;
+}
+.card3 .top h2{
+  font-size: 3.8rem;
+  font-weight: 400;
+
+}
+.card3 .top h4{
+  font-size: 1.2rem;
+  font-weight: 400;
+  padding: 0.2rem 0.5rem;
+}
+.card3 .top p{
+  font-size: 1.078rem;
+  font-weight: 400;
+  padding: 0.2rem 0.5rem;
+  color: rgba(97, 97, 97, 0.702);
+}
+
+.levels{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding-top: 1.8rem;
+}
+
+.level{
+  display: flex;
+  padding: 0 2.5rem;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+  text-align: start;
+  max-width: fit-content;
+}
+.dots {
+  display: flex;
+  flex-direction: row;
+  gap: 0.35rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.dot {
+  width: 1rem;
+  height: 1rem;
+  background-color: #2196F3;
+  border-radius: 50%;
+}
+
+
+/* Section 4 */
+
+.section4{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+}
+.section4 h2{
+  font-weight: 400;
+  color: rgb(97, 87, 87);
+}
+.section5{
+  margin: 3rem;
+}
+.section5 .innumbers{
+  display: flex;
+  gap: 7rem;
+  justify-content: center;
+  align-items: center;  
+}
+.section5 .ratings{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
+}
+.section5 .ratings h2  {
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+.section5 .ratings p{
+  font-size: 1.2rem;
+  font-weight: 200;
+  color: rgb(102, 94, 94);
+}

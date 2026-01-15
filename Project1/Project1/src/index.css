@@ -1,0 +1,103 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body{
+  width: 100%;
+  height: 100%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 4rem;
+}
+.navbar .logo{
+  padding-right:2rem;
+} 
+
+.navbar img{
+  width: 2.5rem;
+  border-radius: 50%;
+}
+.left{
+  display: flex;
+  align-items: center;
+}
+.navbar .left a{
+  padding: 0 1rem;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+.navbar .right a{
+  color: black;
+  cursor: pointer;
+}
+
+.main{
+  display: flex;
+  justify-content: space-around;
+}
+
+.leftcontent{
+  display: flex;
+  flex-direction: column;
+}
+
+.main .leftcontent .upper{
+  display: flex;
+  padding: 2rem 5rem;
+}
+.upper .projects,.startup{
+  padding: 1rem 1rem;
+}
+.upper .projects h3{
+  font-size: 2.5rem;
+  font-weight: 200;
+}
+.upper .startup h3{
+  font-size: 2.5rem;
+  font-weight: 200;
+}
+
+.main .leftcontent .mid{
+  padding: 0rem 5rem;
+}
+.main .leftcontent .bottom{
+  padding: 9rem 5rem;
+  font-size: 1rem;
+  font-weight: 200;
+}
+.mid h1{
+  font-size: 13rem;
+  font-weight: 200;
+}
+.mid p{
+  font-size: 1.4rem;
+  font-weight: 200;
+}
+
+
+
+.rightcontent img{
+  width: 40rem;
+  object-fit: cover;
+  mix-blend-mode: multiply;
+}
+
+
+.vertical-text { 
+  writing-mode: vertical-rl; 
+  text-orientation:; /* optional: controls character orientation */ 
+}
+
+.rotating-text {
+  display: inline-block;
+  transform: rotate(270deg);
+}
